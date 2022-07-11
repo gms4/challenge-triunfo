@@ -63,6 +63,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C04655AF287C9E59000FD91D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0E2B95D28737E410022638C /* Assets.xcassets */,
+				C0E2B96228737E410022638C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C0E2B94828737E400022638C = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +94,7 @@
 				C0E2B95428737E400022638C /* AppDelegate.swift */,
 				C0E2B95628737E400022638C /* SceneDelegate.swift */,
 				C04655AD287C9986000FD91D /* Controllers */,
-				C0E2B95D28737E410022638C /* Assets.xcassets */,
-				C0E2B96228737E410022638C /* Info.plist */,
+				C04655AF287C9E59000FD91D /* Supporting Files */,
 				C04655AE287C99C7000FD91D /* View */,
 			);
 			path = "challenge-triunfo";
