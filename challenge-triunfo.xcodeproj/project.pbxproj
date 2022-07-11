@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C04655A8287C9806000FD91D /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04655A7287C9806000FD91D /* PopularCollectionViewCell.swift */; };
+		C04655AA287C9843000FD91D /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04655A9287C9843000FD91D /* NowPlayingCollectionViewCell.swift */; };
+		C04655AC287C9857000FD91D /* UpcomingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04655AB287C9857000FD91D /* UpcomingCollectionViewCell.swift */; };
 		C0E2B95528737E400022638C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95428737E400022638C /* AppDelegate.swift */; };
 		C0E2B95728737E400022638C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95628737E400022638C /* SceneDelegate.swift */; };
-		C0E2B95928737E400022638C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95828737E400022638C /* ViewController.swift */; };
+		C0E2B95928737E400022638C /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95828737E400022638C /* FeaturedViewController.swift */; };
 		C0E2B95C28737E400022638C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E2B95A28737E400022638C /* Main.storyboard */; };
 		C0E2B95E28737E410022638C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E2B95D28737E410022638C /* Assets.xcassets */; };
 		C0E2B96128737E410022638C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E2B95F28737E410022638C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C04655A7287C9806000FD91D /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
+		C04655A9287C9843000FD91D /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
+		C04655AB287C9857000FD91D /* UpcomingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCollectionViewCell.swift; sourceTree = "<group>"; };
 		C0E2B95128737E400022638C /* challenge-triunfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge-triunfo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E2B95428737E400022638C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E2B95628737E400022638C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C0E2B95828737E400022638C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0E2B95828737E400022638C /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		C0E2B95B28737E400022638C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0E2B95D28737E410022638C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0E2B96028737E410022638C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C04655AD287C9986000FD91D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0E2B95828737E400022638C /* FeaturedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C04655AE287C99C7000FD91D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0E2B95A28737E400022638C /* Main.storyboard */,
+				C0E2B95F28737E410022638C /* LaunchScreen.storyboard */,
+				C04655A7287C9806000FD91D /* PopularCollectionViewCell.swift */,
+				C04655A9287C9843000FD91D /* NowPlayingCollectionViewCell.swift */,
+				C04655AB287C9857000FD91D /* UpcomingCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C0E2B94828737E400022638C = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +84,10 @@
 			children = (
 				C0E2B95428737E400022638C /* AppDelegate.swift */,
 				C0E2B95628737E400022638C /* SceneDelegate.swift */,
-				C0E2B95828737E400022638C /* ViewController.swift */,
-				C0E2B95A28737E400022638C /* Main.storyboard */,
+				C04655AD287C9986000FD91D /* Controllers */,
 				C0E2B95D28737E410022638C /* Assets.xcassets */,
-				C0E2B95F28737E410022638C /* LaunchScreen.storyboard */,
 				C0E2B96228737E410022638C /* Info.plist */,
+				C04655AE287C99C7000FD91D /* View */,
 			);
 			path = "challenge-triunfo";
 			sourceTree = "<group>";
@@ -138,7 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0E2B95928737E400022638C /* ViewController.swift in Sources */,
+				C04655AC287C9857000FD91D /* UpcomingCollectionViewCell.swift in Sources */,
+				C04655AA287C9843000FD91D /* NowPlayingCollectionViewCell.swift in Sources */,
+				C04655A8287C9806000FD91D /* PopularCollectionViewCell.swift in Sources */,
+				C0E2B95928737E400022638C /* FeaturedViewController.swift in Sources */,
 				C0E2B95528737E400022638C /* AppDelegate.swift in Sources */,
 				C0E2B95728737E400022638C /* SceneDelegate.swift in Sources */,
 			);
