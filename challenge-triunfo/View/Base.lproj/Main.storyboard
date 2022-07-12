@@ -77,10 +77,13 @@
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pza-0A-W3Q">
-                                                                            <rect key="frame" x="8" y="8" width="184" height="100.5"/>
+                                                                            <rect key="frame" x="8" y="8" width="184" height="100"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" secondItem="Pza-0A-W3Q" secondAttribute="height" multiplier="46:25" id="PUr-Qw-BM4"/>
+                                                                            </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;titleLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UL-m7-YRq">
-                                                                            <rect key="frame" x="8" y="112.5" width="184" height="19.5"/>
+                                                                            <rect key="frame" x="8" y="112" width="184" height="20"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -151,7 +154,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qRo-dU-U6T" customClass="NowPlayingCollectionViewCell" customModule="challenge_triunfo" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="nowPlayingCell" id="qRo-dU-U6T" customClass="NowPlayingCollectionViewCell" customModule="challenge_triunfo" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="0.0" width="251" height="114"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9g5-tC-bsj">
@@ -199,7 +202,7 @@
                                                                 </collectionViewCellContentView>
                                                                 <connections>
                                                                     <outlet property="dateLabel" destination="88b-qZ-K97" id="NbO-Yo-lml"/>
-                                                                    <outlet property="image" destination="P7s-Zg-OWn" id="jbg-19-tIe"/>
+                                                                    <outlet property="imageView" destination="P7s-Zg-OWn" id="jbg-19-tIe"/>
                                                                     <outlet property="titleLabel" destination="gwu-pc-6EO" id="fwE-HE-8p1"/>
                                                                 </connections>
                                                             </collectionViewCell>
