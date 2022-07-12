@@ -12,6 +12,11 @@ class FeaturedViewController: UIViewController, UICollectionViewDataSource {
     @IBOutlet var popularCollectionView: UICollectionView!
     @IBOutlet var nowPlayingCollectionView: UICollectionView!
     
+    
+    let movieQualquer = Movie(title: "Harry Potter", poster: "poster_hp.jpg", backdrop: "backdrop_hp.jpg", voteAverage: 4.5, releaseDate: "2001", overview: "Um bruxinho vai pra escola de magia e vive altas aventuras", genres: ["Fantasia", "Ação", "Mistério e Aventura"])
+    let movies = [Movie(title: "Harry Potter", poster: "poster_hp.jpg", backdrop: "backdrop_hp.jpg", voteAverage: 4.5, releaseDate: "2001", overview: "Um bruxinho vai pra escola de magia e vive altas aventuras", genres: ["Fantasia", "Ação", "Mistério e Aventura"]), Movie(title: "Harry Potter", poster: "poster_hp.jpg", backdrop: "backdrop_hp.jpg", voteAverage: 4.5, releaseDate: "2001", overview: "Um bruxinho vai pra escola de magia e vive altas aventuras", genres: ["Fantasia", "Ação", "Mistério e Aventura"]), Movie(title: "Harry Potter", poster: "poster_hp.jpg", backdrop: "backdrop_hp.jpg", voteAverage: 4.5, releaseDate: "2001", overview: "Um bruxinho vai pra escola de magia e vive altas aventuras", genres: ["Fantasia", "Ação", "Mistério e Aventura"]), Movie(title: "Harry Potter", poster: "poster_hp.jpg", backdrop: "backdrop_hp.jpg", voteAverage: 4.5, releaseDate: "2001", overview: "Um bruxinho vai pra escola de magia e vive altas aventuras", genres: ["Fantasia", "Ação", "Mistério e Aventura"])]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
