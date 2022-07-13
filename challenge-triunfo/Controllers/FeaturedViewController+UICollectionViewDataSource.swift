@@ -44,10 +44,8 @@ extension FeaturedViewController: UICollectionViewDataSource {
             return popularMovies.count
         } else if collectionView == nowPlayingCollectionView {
             return nowPlayingMovies.count
-        } else if collectionView == upcomingCollectionView {
-            return upcomingMovies.count
         } else {
-            return 0
+            return upcomingMovies.count
         }
     }
     
@@ -57,11 +55,9 @@ extension FeaturedViewController: UICollectionViewDataSource {
             return makePopularCell(indexPath)
         } else if collectionView == nowPlayingCollectionView {
             return makeNowPlayingCell(indexPath)
-        } else if collectionView == upcomingCollectionView {
+        } else {
             return makeUpcomingCell(indexPath)
         }
-        
-        return UICollectionViewCell()
         
     }
     

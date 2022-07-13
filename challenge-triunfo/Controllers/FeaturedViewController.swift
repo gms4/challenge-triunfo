@@ -29,5 +29,12 @@ class FeaturedViewController: UIViewController {
         upcomingCollectionView.delegate = self
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailsViewController {
+            let movie = sender as? Movie
+            destination.movie = movie
+        }
+    }
+    
 }
 
