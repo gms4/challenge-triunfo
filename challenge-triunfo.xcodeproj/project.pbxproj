@@ -17,6 +17,8 @@
 		C04655C5287DF510000FD91D /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04655C0287DF510000FD91D /* Movie+TrendingToday.swift */; };
 		C04655C6287DF510000FD91D /* Movie+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04655C1287DF510000FD91D /* Movie+Popular.swift */; };
 		C04655C8287E1451000FD91D /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04655C7287E1451000FD91D /* FeaturedViewController+UICollectionViewDataSource.swift */; };
+		C0DC7F7D287F3F03000F52A7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC7F7C287F3F03000F52A7 /* DetailsViewController.swift */; };
+		C0DC7F7F287F47E3000F52A7 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC7F7E287F47E3000F52A7 /* FeaturedViewController+UICollectionViewDelegate.swift */; };
 		C0E2B95528737E400022638C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95428737E400022638C /* AppDelegate.swift */; };
 		C0E2B95728737E400022638C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95628737E400022638C /* SceneDelegate.swift */; };
 		C0E2B95928737E400022638C /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95828737E400022638C /* FeaturedViewController.swift */; };
@@ -36,6 +38,8 @@
 		C04655C0287DF510000FD91D /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
 		C04655C1287DF510000FD91D /* Movie+Popular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Popular.swift"; sourceTree = "<group>"; };
 		C04655C7287E1451000FD91D /* FeaturedViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		C0DC7F7C287F3F03000F52A7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C0DC7F7E287F47E3000F52A7 /* FeaturedViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		C0E2B95128737E400022638C /* challenge-triunfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge-triunfo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E2B95428737E400022638C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E2B95628737E400022638C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			children = (
 				C0E2B95828737E400022638C /* FeaturedViewController.swift */,
 				C04655C7287E1451000FD91D /* FeaturedViewController+UICollectionViewDataSource.swift */,
+				C0DC7F7C287F3F03000F52A7 /* DetailsViewController.swift */,
+				C0DC7F7E287F47E3000F52A7 /* FeaturedViewController+UICollectionViewDelegate.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -90,12 +96,12 @@
 		C04655B0287DEDF3000FD91D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C04655BF287DF510000FD91D /* Movie+NowPlaying.swift */,
+				C04655B1287DEE48000FD91D /* Movie.swift */,
 				C04655C1287DF510000FD91D /* Movie+Popular.swift */,
+				C04655BF287DF510000FD91D /* Movie+NowPlaying.swift */,
+				C04655BD287DF510000FD91D /* Movie+Upcoming.swift */,
 				C04655BE287DF510000FD91D /* Movie+TrendingThisWeek.swift */,
 				C04655C0287DF510000FD91D /* Movie+TrendingToday.swift */,
-				C04655BD287DF510000FD91D /* Movie+Upcoming.swift */,
-				C04655B1287DEE48000FD91D /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 				C04655C4287DF510000FD91D /* Movie+NowPlaying.swift in Sources */,
 				C04655C6287DF510000FD91D /* Movie+Popular.swift in Sources */,
 				C0E2B95928737E400022638C /* FeaturedViewController.swift in Sources */,
+				C0DC7F7F287F47E3000F52A7 /* FeaturedViewController+UICollectionViewDelegate.swift in Sources */,
+				C0DC7F7D287F3F03000F52A7 /* DetailsViewController.swift in Sources */,
 				C0E2B95528737E400022638C /* AppDelegate.swift in Sources */,
 				C0E2B95728737E400022638C /* SceneDelegate.swift in Sources */,
 			);

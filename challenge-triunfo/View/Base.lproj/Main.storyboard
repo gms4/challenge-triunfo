@@ -273,7 +273,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IyZ-Of-o83">
                                                                             <rect key="frame" x="8" y="272" width="184" height="23"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" text="&lt;titleLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gan-Jh-Wgb">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="&lt;titleLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gan-Jh-Wgb">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="92.5" height="23"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                     <nil key="textColor"/>
@@ -337,6 +337,7 @@
                         <outlet property="nowPlayingCollectionView" destination="S3Z-Jx-vHb" id="6RH-f3-5WB"/>
                         <outlet property="popularCollectionView" destination="90A-8f-dK6" id="Vmu-7O-wOt"/>
                         <outlet property="upcomingCollectionView" destination="Pwq-Et-1Va" id="hGj-9V-l7r"/>
+                        <segue destination="b95-L8-Zm9" kind="show" identifier="detailsSegue" id="1Ib-3e-1Um"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -379,6 +380,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjo-0p-8yi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="786" y="131"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="pAi-vY-BsF">
+            <objects>
+                <viewController id="b95-L8-Zm9" customClass="DetailsViewController" customModule="challenge_triunfo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wh5-xs-SVb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1345"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8V1-qv-uXu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="gfE-xH-dzD"/>
+                    <size key="freeformSize" width="414" height="1345"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SF3-7G-cg0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="130"/>
         </scene>
     </scenes>
     <resources>
