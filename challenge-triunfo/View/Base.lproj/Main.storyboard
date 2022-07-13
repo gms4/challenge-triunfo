@@ -256,7 +256,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="UqZ-Ne-04a" customClass="UpcomingCollectionViewCell" customModule="challenge_triunfo" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="upcomingCell" id="UqZ-Ne-04a" customClass="UpcomingCollectionViewCell" customModule="challenge_triunfo" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="9.5" width="200" height="299"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BBG-tf-pYf">
@@ -298,6 +298,11 @@
                                                                         <constraint firstAttribute="bottom" secondItem="IyZ-Of-o83" secondAttribute="bottom" constant="4" id="z9n-oG-dTk"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="upcomingDate" destination="gWu-yB-qZV" id="PDz-8Y-quZ"/>
+                                                                    <outlet property="upcomingImage" destination="oOa-h8-uVl" id="ZgP-KO-fQW"/>
+                                                                    <outlet property="upcomingTitle" destination="gan-Jh-Wgb" id="fBK-DY-jKk"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -329,8 +334,9 @@
                     <navigationItem key="navigationItem" title="Featured" id="0z2-QD-3Aw"/>
                     <size key="freeformSize" width="414" height="1346"/>
                     <connections>
-                        <outlet property="nowPlayingCollectionView" destination="S3Z-Jx-vHb" id="eZ5-vf-S8Y"/>
+                        <outlet property="nowPlayingCollectionView" destination="S3Z-Jx-vHb" id="6RH-f3-5WB"/>
                         <outlet property="popularCollectionView" destination="90A-8f-dK6" id="Vmu-7O-wOt"/>
+                        <outlet property="upcomingCollectionView" destination="Pwq-Et-1Va" id="hGj-9V-l7r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

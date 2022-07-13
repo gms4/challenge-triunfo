@@ -27,11 +27,23 @@ extension FeaturedViewController: UICollectionViewDataSource {
         return UICollectionViewCell()
     }
     
+    fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: "upcomingCell", for: indexPath) as? UpcomingCollectionViewCell {
+            cell.upcomingTitle.text = upcomingMovies[indexPath.item].title
+            cell.upcomingDate.text = upcomingMovies[indexPath.item].releaseDate
+            cell.upcomingImage.image = UIImage(named: upcomingMovies[indexPath.item].poster)
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == popularCollectionView {
             return popularMovies.count
         } else if collectionView == nowPlayingCollectionView {
             return nowPlayingMovies.count
+        } else if collectionView == upcomingCollectionView {
+            return upcomingMovies.count
         } else {
             return 0
         }
@@ -43,6 +55,8 @@ extension FeaturedViewController: UICollectionViewDataSource {
             return makePopularCell(indexPath)
         } else if collectionView == nowPlayingCollectionView {
             return makeNowPlayingCell(indexPath)
+        } else if collectionView == upcomingCollectionView {
+            return makeUpcomingCell(indexPath)
         }
         
         return UICollectionViewCell()

@@ -11,9 +11,11 @@ class FeaturedViewController: UIViewController {
     
     let popularMovies = Movie.popularMovies()
     let nowPlayingMovies = Movie.nowPlayingMovies()
+    let upcomingMovies = Movie.upcomingMovies()
     
     @IBOutlet var popularCollectionView: UICollectionView!
     @IBOutlet var nowPlayingCollectionView: UICollectionView!
+    @IBOutlet var upcomingCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ class FeaturedViewController: UIViewController {
         
         popularCollectionView.dataSource = self
         nowPlayingCollectionView.dataSource = self
+        upcomingCollectionView.dataSource = self
         
     }
     
