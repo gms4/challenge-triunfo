@@ -14,4 +14,12 @@ class NowPlayingCollectionViewCell: UICollectionViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
     
+    func setup (title: String, year: String, image: UIImage) {
+        
+        titleLabel.text = title
+        self.imageView.image = image
+        dateLabel.text = year
+        
+    }
+    
 }
