@@ -8,6 +8,28 @@
 import UIKit
 extension FeaturedViewController: UICollectionViewDataSource {
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == popularCollectionView {
+            return popularMovies.count
+        } else if collectionView == nowPlayingCollectionView {
+            return nowPlayingMovies.count
+        } else {
+            return upcomingMovies.count
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if collectionView == popularCollectionView {
+            return makePopularCell(indexPath)
+        } else if collectionView == nowPlayingCollectionView {
+            return makeNowPlayingCell(indexPath)
+        } else {
+            return makeUpcomingCell(indexPath)
+        }
+        
+    }
+    
     fileprivate func makePopularCell(_ indexPath: IndexPath) -> PopularCollectionViewCell {
         if let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifier, for: indexPath) as? PopularCollectionViewCell {
             cell.titleLabel.text = popularMovies[indexPath.item].title
@@ -37,28 +59,6 @@ extension FeaturedViewController: UICollectionViewDataSource {
             return cell
         }
         return UpcomingCollectionViewCell()
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == popularCollectionView {
-            return popularMovies.count
-        } else if collectionView == nowPlayingCollectionView {
-            return nowPlayingMovies.count
-        } else {
-            return upcomingMovies.count
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if collectionView == popularCollectionView {
-            return makePopularCell(indexPath)
-        } else if collectionView == nowPlayingCollectionView {
-            return makeNowPlayingCell(indexPath)
-        } else {
-            return makeUpcomingCell(indexPath)
-        }
-        
     }
     
 }
