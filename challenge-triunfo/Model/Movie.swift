@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-struct Movie {
+struct Movie: Codable {
     
     let title: String
-    let poster: String
-    let backdrop: String
+    let posterPath: String
+    let backdropPath: String
     let voteAverage: Float
     let releaseDate: String
     let overview: String
-    let genres: [String]
+    let genres: [String]?
     
 }
