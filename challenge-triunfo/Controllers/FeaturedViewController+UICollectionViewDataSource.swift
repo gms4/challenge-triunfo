@@ -59,7 +59,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
     
     fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UpcomingCollectionViewCell {
         if let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell {
-            cell.setup(title: upcomingMovies[indexPath.item].title, year: String(upcomingMovies[indexPath.item].releaseDate.prefix(4)), image: UIImage(named: upcomingMovies[indexPath.item].posterPath) ?? UIImage())
+            cell.setup(title: upcomingMovies[indexPath.item].title, year: String(upcomingMovies[indexPath.item].releaseDate), image: UIImage(named: upcomingMovies[indexPath.item].posterPath) ?? UIImage())
             return cell
         }
         return UpcomingCollectionViewCell()

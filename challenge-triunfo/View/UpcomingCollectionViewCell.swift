@@ -14,11 +14,30 @@ class UpcomingCollectionViewCell: UICollectionViewCell {
     @IBOutlet var upcomingTitle: UILabel!
     @IBOutlet var upcomingDate: UILabel!
     
+    let monthToNameDic = ["01-": "Jan ",
+                          "02-": "Feb ",
+                          "03-": "Mar ",
+                          "04-": "Apr ",
+                          "05-": "May ",
+                          "06-": "Jun ",
+                          "07-": "Jul ",
+                          "08-": "Aug ",
+                          "09-": "Sep ",
+                          "10-": "Oct ",
+                          "11-": "Nov ",
+                          "12-": "Dec "]
+    
     func setup (title: String, year: String, image: UIImage) {
         
         upcomingTitle.text = title
         self.upcomingImage.image = image
-        upcomingDate.text = year
+        upcomingDate.text = convertDate(data: String(year.suffix(5)))
+        
+    }
+    
+    func convertDate (data: String) -> String {
+        
+        return (monthToNameDic[String(data.prefix(3))] ?? "") + String (data.suffix(2))
         
     }
     
