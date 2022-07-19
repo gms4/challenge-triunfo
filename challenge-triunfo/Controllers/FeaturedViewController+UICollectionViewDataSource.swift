@@ -30,6 +30,8 @@ extension FeaturedViewController: UICollectionViewDataSource {
         
     }
     
+    
+    
     fileprivate func makePopularCell(_ indexPath: IndexPath) -> PopularCollectionViewCell {
         if let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifier, for: indexPath) as? PopularCollectionViewCell {
             cell.setup(title: popularMovies[indexPath.item].title,

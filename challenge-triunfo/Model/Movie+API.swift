@@ -103,6 +103,67 @@ extension Movie {
         
     }
     
+    static func trendingTodayMoviesAPI() async -> [Movie] {
+        
+        var components = Movie.urlComponents
+        components.path = "/3/trending/movie/day"
+        components.queryItems = [
+        
+            URLQueryItem(name: "api_key", value: Movie.apiKey)
+            
+        ]
+        
+        let session = URLSession.shared
+        
+        do {
+            
+            let (data, response) = try await session.data(from: components.url!)
+            
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let movieResult = try decoder.decode(MoviesResponse.self, from: data)
+            
+            return movieResult.results
+            
+        } catch {
+            print(error)
+        }
+        
+        return []
+        
+    }
+    
+    static func trendingThisWeekMoviesAPI() async -> [Movie] {
+        
+        var components = Movie.urlComponents
+        components.path = "/3/trending/movie/week"
+        components.queryItems = [
+        
+            URLQueryItem(name: "api_key", value: Movie.apiKey)
+            
+        ]
+        
+        let session = URLSession.shared
+        
+        do {
+            
+            let (data, response) = try await session.data(from: components.url!)
+            
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            let movieResult = try decoder.decode(MoviesResponse.self, from: data)
+            
+            return movieResult.results
+            
+        } catch {
+            print(error)
+        }
+        
+        return []
+        
+    }
+    
+    
     static func getDetailsAPI(id: Int) async -> MovieDetails {
         
         var components = Movie.urlComponents
