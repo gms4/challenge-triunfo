@@ -17,6 +17,7 @@ class PopularCollectionViewCell: UICollectionViewCell {
         
         titleLabel.text = title
         self.image.image = image
+        self.image.layer.cornerRadius = 16
         
     }
     

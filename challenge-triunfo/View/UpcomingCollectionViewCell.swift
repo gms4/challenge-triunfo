@@ -32,6 +32,7 @@ class UpcomingCollectionViewCell: UICollectionViewCell {
         upcomingTitle.text = title
         self.upcomingImage.image = image
         upcomingDate.text = convertDate(data: String(year.suffix(5)))
+        self.upcomingImage.layer.cornerRadius = 16
         
     }
     

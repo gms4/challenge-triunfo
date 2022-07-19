@@ -32,6 +32,9 @@ class FeaturedViewController: UIViewController {
         nowPlayingCollectionView.delegate = self
         upcomingCollectionView.delegate = self
         
+        overrideUserInterfaceStyle = .dark
+        sleep(3)
+        
         Task {
             
             self.popularMovies = await Movie.popularMoviesAPI()
@@ -44,20 +47,7 @@ class FeaturedViewController: UIViewController {
             self.upcomingCollectionView.reloadData()
             
         }
-        
-//        Task {
-//
-//            self.nowPlayingMovies = await Movie.nowPlayingMoviesAPI()
-//            self.nowPlayingCollectionView.reloadData()
-//
-//        }
-//
-//        Task {
-//
-//            self.upcomingMovies = await Movie.upcomingMoviesAPI()
-//            self.upcomingCollectionView.reloadData()
-//        }
-        
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

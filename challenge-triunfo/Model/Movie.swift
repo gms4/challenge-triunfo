@@ -17,5 +17,6 @@ struct Movie: Codable {
     let releaseDate: String
     let overview: String
     let genres: [String]?
+    let id: Int
     
 }

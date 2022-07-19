@@ -19,6 +19,7 @@ class NowPlayingCollectionViewCell: UICollectionViewCell {
         titleLabel.text = title
         self.imageView.image = image
         dateLabel.text = year
+        self.imageView.layer.cornerRadius = 12
         
     }
     
