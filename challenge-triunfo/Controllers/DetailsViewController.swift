@@ -34,7 +34,8 @@ class DetailsViewController: UIViewController {
             self.backdropImage.image = imagem
             
         }
-        backdropImage.image = UIImage(named: movie.backdropPath)
+        
+//        backdropImage.image = UIImage(named: movie.backdropPath)
         titleLabel.text = movie.title
         
         Task {
@@ -45,7 +46,7 @@ class DetailsViewController: UIViewController {
             
         }
         
-        posterImage.image = UIImage(named: movie.posterPath)
+//        posterImage.image = UIImage(named: movie.posterPath)
         ratingLabel.text = "Rating: \(movie.voteAverage)/10"
         overviewLabel.text = movie.overview
     }

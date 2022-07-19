@@ -8,8 +8,7 @@
 import Foundation
 
 extension Movie {
-    
-    
+        
     // MARK: - Download de populares
     static let urlComponents = URLComponents(string: "https://api.themoviedb.org/")!
 
@@ -43,6 +42,7 @@ extension Movie {
         
     }
     
+    // MARK: - Download de em cartaz
     static func nowPlayingMoviesAPI() async -> [Movie] {
         
         var components = Movie.urlComponents
@@ -106,7 +106,6 @@ extension Movie {
     
     
     // MARK: - Download de imagens
-    
     static func downloadImageData(withPath: String) async -> Data {
         
         let urlString = "https://image.tmdb.org/t/p/w780\(withPath)"
