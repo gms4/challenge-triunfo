@@ -49,7 +49,7 @@
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="See all"/>
                                                                         <connections>
-                                                                            <segue destination="fmq-0Y-FH1" kind="show" id="Fwu-2z-r6W"/>
+                                                                            <segue destination="fmq-0Y-FH1" kind="show" identifier="seeAllPopular" id="Fwu-2z-r6W"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -138,7 +138,7 @@
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="See all"/>
                                                                         <connections>
-                                                                            <segue destination="fmq-0Y-FH1" kind="show" id="WUC-6z-yFL"/>
+                                                                            <segue destination="fmq-0Y-FH1" kind="show" identifier="seeAllNowPlaying" id="WUC-6z-yFL"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -243,7 +243,7 @@
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="See all"/>
                                                                         <connections>
-                                                                            <segue destination="fmq-0Y-FH1" kind="show" id="g8w-vS-VmE"/>
+                                                                            <segue destination="fmq-0Y-FH1" kind="show" identifier="seeAllUpcoming" id="g8w-vS-VmE"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -815,7 +815,7 @@
         <!--See All View Controller-->
         <scene sceneID="nGQ-yR-Ccs">
             <objects>
-                <viewController id="fmq-0Y-FH1" userLabel="See All View Controller" sceneMemberID="viewController">
+                <viewController id="fmq-0Y-FH1" userLabel="See All View Controller" customClass="SeeAllViewController" customModule="Ticket_to_Watch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H0Y-gJ-cv7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -827,7 +827,7 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="wS8-PC-R7x">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tableCell" id="wS8-PC-R7x" customClass="SeeAllTableViewCell" customModule="Ticket_to_Watch" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wS8-PC-R7x" id="Ivb-eN-Be0">
@@ -889,6 +889,12 @@
                                                 <constraint firstItem="PpB-4b-MuP" firstAttribute="leading" secondItem="Ivb-eN-Be0" secondAttribute="leading" constant="16" id="y7l-I7-Tb3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imagePoste" destination="PpB-4b-MuP" id="yoX-sn-brP"/>
+                                            <outlet property="ratingLabel" destination="sMC-Wh-bco" id="1kk-aq-ZOo"/>
+                                            <outlet property="titleLabel" destination="3xo-gO-Zqk" id="ArM-gY-LS5"/>
+                                            <outlet property="yearLabel" destination="UoP-8r-6uT" id="NAJ-op-Z6w"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -907,15 +913,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="znJ-Z5-YD7"/>
+                    <connections>
+                        <outlet property="seeAllTableView" destination="vwg-7s-sR6" id="8dO-00-qpp"/>
+                        <segue destination="b95-L8-Zm9" kind="show" identifier="showDetails" id="AOc-nn-vNm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2b-hF-bOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2598.5507246376815" y="-760.04464285714278"/>
+            <point key="canvasLocation" x="3633" y="-822"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="g8w-vS-VmE"/>
-        <segue reference="tbM-Z3-zpQ"/>
+        <segue reference="AOc-nn-vNm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="591" height="1280"/>

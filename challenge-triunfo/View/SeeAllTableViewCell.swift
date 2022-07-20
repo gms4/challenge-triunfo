@@ -9,18 +9,21 @@ import UIKit
 
 class SeeAllTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    static let cellIdentifier = "tableCell"
     
+    @IBOutlet var imagePoste: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var yearLabel: UILabel!
+    @IBOutlet var ratingLabel: UILabel!
     
+    func setup (title: String, rating: String, image: UIImage, year: String) {
+            
+            titleLabel.text = title
+            imagePoste.image = image
+            yearLabel.text = year
+            ratingLabel.text = "\(rating)/10"
+            self.imagePoste.layer.cornerRadius = 8
+            
+        }
     
-
 }

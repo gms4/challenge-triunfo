@@ -51,11 +51,27 @@ class FeaturedViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? DetailsViewController {
-            let movie = sender as? Movie
-            destination.movie = movie
-        }
+        if segue.identifier == "detailsSegue" {
+                   if let destination = segue.destination as? DetailsViewController{
+                       let movie = sender as? Movie
+                       destination.movie = movie
+                   }
+               }
+               else if segue.identifier == "seeAllPopular" {
+                   if let destination = segue.destination as? SeeAllViewController{
+                       destination.seeAllMovies = popularMovies
+                   }
+               }
+               else if segue.identifier == "seeAllNowPlaying" {
+                   if let destination = segue.destination as? SeeAllViewController{
+                       destination.seeAllMovies = nowPlayingMovies
+                   }
+               }
+               else if segue.identifier == "seeAllUpcoming" {
+                   if let destination = segue.destination as? SeeAllViewController{
+                       destination.seeAllMovies = upcomingMovies
+                   }
+               }
+           }
     }
-    
-}
 

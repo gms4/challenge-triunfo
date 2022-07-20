@@ -63,13 +63,13 @@ extension TrendingViewController: UITableViewDataSource {
             
             let movie = trendingMovies[indexPath.item]
         
-            cell.setup(title: movie.title, year: movie.releaseDate, image: UIImage())
+            cell.setup(title: movie.title, year: movie.releaseDate ?? "", image: UIImage())
             
             Task {
                 
-                let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
+                let imageData = await Movie.downloadImageData(withPath: movie.posterPath ?? "")
                 let image = UIImage(data: imageData)
-                cell.setup(title: movie.title, year: movie.releaseDate, image: image ?? UIImage())
+                cell.setup(title: movie.title, year: movie.releaseDate!, image: image ?? UIImage())
                 
             }
             

@@ -27,6 +27,7 @@
 		C0DC7F8D28874AD3000F52A7 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC7F8C28874AD3000F52A7 /* TrendingViewController.swift */; };
 		C0DC7F9128874FAB000F52A7 /* TrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC7F9028874FAB000F52A7 /* TrendingTableViewCell.swift */; };
 		C0DC7F932887808B000F52A7 /* SeeAllTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC7F922887808B000F52A7 /* SeeAllTableViewCell.swift */; };
+		C0DC7F9528878853000F52A7 /* SeeAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC7F9428878853000F52A7 /* SeeAllViewController.swift */; };
 		C0E2B95528737E400022638C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95428737E400022638C /* AppDelegate.swift */; };
 		C0E2B95728737E400022638C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95628737E400022638C /* SceneDelegate.swift */; };
 		C0E2B95928737E400022638C /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95828737E400022638C /* FeaturedViewController.swift */; };
@@ -56,6 +57,7 @@
 		C0DC7F8C28874AD3000F52A7 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		C0DC7F9028874FAB000F52A7 /* TrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewCell.swift; sourceTree = "<group>"; };
 		C0DC7F922887808B000F52A7 /* SeeAllTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllTableViewCell.swift; sourceTree = "<group>"; };
+		C0DC7F9428878853000F52A7 /* SeeAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllViewController.swift; sourceTree = "<group>"; };
 		C0E2B95128737E400022638C /* Ticket to Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ticket to Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E2B95428737E400022638C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E2B95628737E400022638C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				C0DC7F7E287F47E3000F52A7 /* FeaturedViewController+UICollectionViewDelegate.swift */,
 				C0DC7F8A28872A7B000F52A7 /* PosterViewController.swift */,
 				C0DC7F8C28874AD3000F52A7 /* TrendingViewController.swift */,
+				C0DC7F9428878853000F52A7 /* SeeAllViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				C04655AA287C9843000FD91D /* NowPlayingCollectionViewCell.swift in Sources */,
 				C0DC7F8B28872A7B000F52A7 /* PosterViewController.swift in Sources */,
 				C04655C8287E1451000FD91D /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */,
+				C0DC7F9528878853000F52A7 /* SeeAllViewController.swift in Sources */,
 				C04655C3287DF510000FD91D /* Movie+TrendingThisWeek.swift in Sources */,
 				C04655A8287C9806000FD91D /* PopularCollectionViewCell.swift in Sources */,
 				C04655C2287DF510000FD91D /* Movie+Upcoming.swift in Sources */,
