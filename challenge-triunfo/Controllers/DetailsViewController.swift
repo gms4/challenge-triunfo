@@ -57,9 +57,9 @@ class DetailsViewController: UIViewController {
             let genreString = data.genres.map { genre in
                 return genre.name
             }
-            print(genreString)
+            //print(genreString)
             var aux = ""
-            print(genreString.count)
+            //print(genreString.count)
             for i in 0...genreString.count - 1 {
                 if i == genreString.count - 1 {
                     aux += genreString[i]

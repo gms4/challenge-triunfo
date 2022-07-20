@@ -12,7 +12,7 @@
         <!--Featured-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Featured" id="BYZ-38-t0r" customClass="FeaturedViewController" customModule="challenge_triunfo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Featured" id="BYZ-38-t0r" customClass="FeaturedViewController" customModule="Ticket_to_Watch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1346"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,9 +45,12 @@
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7W5-6C-LVG">
                                                                         <rect key="frame" x="315" y="0.0" width="67" height="50"/>
-                                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="See all"/>
+                                                                        <connections>
+                                                                            <segue destination="fmq-0Y-FH1" kind="show" id="Fwu-2z-r6W"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,7 +77,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="popularCell" id="yYT-hT-0Tf" customClass="PopularCollectionViewCell" customModule="challenge_triunfo" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="popularCell" id="yYT-hT-0Tf" customClass="PopularCollectionViewCell" customModule="Ticket_to_Watch" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="0.0" width="200" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="99z-Hg-J8N">
@@ -134,6 +137,9 @@
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="See all"/>
+                                                                        <connections>
+                                                                            <segue destination="fmq-0Y-FH1" kind="show" id="WUC-6z-yFL"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -159,7 +165,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="nowPlayingCell" id="qRo-dU-U6T" customClass="NowPlayingCollectionViewCell" customModule="challenge_triunfo" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="nowPlayingCell" id="qRo-dU-U6T" customClass="NowPlayingCollectionViewCell" customModule="Ticket_to_Watch" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="0.0" width="251" height="114"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9g5-tC-bsj">
@@ -236,6 +242,9 @@
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="See all"/>
+                                                                        <connections>
+                                                                            <segue destination="fmq-0Y-FH1" kind="show" id="g8w-vS-VmE"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -261,7 +270,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="upcomingCell" id="UqZ-Ne-04a" customClass="UpcomingCollectionViewCell" customModule="challenge_triunfo" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="upcomingCell" id="UqZ-Ne-04a" customClass="UpcomingCollectionViewCell" customModule="Ticket_to_Watch" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="9.5" width="200" height="299"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BBG-tf-pYf">
@@ -352,7 +361,7 @@
         <!--Trending-->
         <scene sceneID="aaL-8M-Wm1">
             <objects>
-                <viewController id="KBh-id-Xrb" customClass="TrendingViewController" customModule="challenge_triunfo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KBh-id-Xrb" customClass="TrendingViewController" customModule="Ticket_to_Watch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qsA-4C-mt3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -367,7 +376,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trendingTableViewCell" rowHeight="114" id="iG3-XQ-0WO" customClass="TrendingTableViewCell" customModule="challenge_triunfo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="trendingTableViewCell" rowHeight="114" id="iG3-XQ-0WO" customClass="TrendingTableViewCell" customModule="Ticket_to_Watch" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iG3-XQ-0WO" id="PMh-jM-zu2">
@@ -391,7 +400,7 @@
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="&lt;titleLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ex-M7-sAH" userLabel="titleLabel">
                                                                             <rect key="frame" x="0.0" y="0.0" width="261.5" height="19.5"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -550,13 +559,13 @@
         <!--Details View Controller-->
         <scene sceneID="pAi-vY-BsF">
             <objects>
-                <viewController id="b95-L8-Zm9" customClass="DetailsViewController" customModule="challenge_triunfo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b95-L8-Zm9" customClass="DetailsViewController" customModule="Ticket_to_Watch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wh5-xs-SVb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1355"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5HD-d7-Lwb">
-                                <rect key="frame" x="0.0" y="-465" width="838" height="1855"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="5HD-d7-Lwb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtT-XU-Dme">
@@ -772,7 +781,7 @@
         <!--Poster View Controller-->
         <scene sceneID="cMo-uh-G6T">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="E3G-ff-za1" userLabel="Poster View Controller" customClass="PosterViewController" customModule="challenge_triunfo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="E3G-ff-za1" userLabel="Poster View Controller" customClass="PosterViewController" customModule="Ticket_to_Watch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Xr-6o-7YJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -803,8 +812,109 @@
             </objects>
             <point key="canvasLocation" x="4107.2463768115949" y="79.6875"/>
         </scene>
+        <!--See All View Controller-->
+        <scene sceneID="nGQ-yR-Ccs">
+            <objects>
+                <viewController id="fmq-0Y-FH1" userLabel="See All View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H0Y-gJ-cv7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FVt-5L-4ls">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="114" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vwg-7s-sR6">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="wS8-PC-R7x">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wS8-PC-R7x" id="Ivb-eN-Be0">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PpB-4b-MuP">
+                                                    <rect key="frame" x="16" y="12" width="60" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="PpB-4b-MuP" secondAttribute="height" multiplier="60:90" id="BQS-yo-VZq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Etv-ab-19w">
+                                                    <rect key="frame" x="92" y="19" width="286" height="76"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xww-BD-5Qh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="155" height="47"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;titleLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xo-gO-Zqk">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="19.5"/>
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;dateLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoP-8r-6uT">
+                                                                    <rect key="frame" x="0.0" y="27.5" width="155" height="19.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FlJ-pF-eq4">
+                                                            <rect key="frame" x="155" y="0.0" width="131" height="20"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MI7-Il-Yk2">
+                                                                    <rect key="frame" x="0.0" y="-0.5" width="22" height="20"/>
+                                                                    <color key="tintColor" systemColor="systemPurpleColor"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="&lt;ratingLabel&gt;" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMC-Wh-bco">
+                                                                    <rect key="frame" x="30" y="0.0" width="101" height="20"/>
+                                                                    <color key="tintColor" systemColor="labelColor"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="PpB-4b-MuP" secondAttribute="bottom" constant="12" id="BTz-dy-ytI"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Etv-ab-19w" secondAttribute="bottom" constant="8" id="JwD-1F-KM7"/>
+                                                <constraint firstItem="Etv-ab-19w" firstAttribute="top" secondItem="Ivb-eN-Be0" secondAttribute="topMargin" constant="8" id="O6P-ZD-e9S"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Etv-ab-19w" secondAttribute="trailing" constant="16" id="XSe-GY-1uL"/>
+                                                <constraint firstItem="PpB-4b-MuP" firstAttribute="top" secondItem="Ivb-eN-Be0" secondAttribute="top" constant="12" id="Zib-Jg-bpH"/>
+                                                <constraint firstItem="Etv-ab-19w" firstAttribute="leading" secondItem="PpB-4b-MuP" secondAttribute="trailing" constant="16" id="bEm-df-2Hf"/>
+                                                <constraint firstItem="PpB-4b-MuP" firstAttribute="leading" secondItem="Ivb-eN-Be0" secondAttribute="leading" constant="16" id="y7l-I7-Tb3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sK3-it-0ro"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FVt-5L-4ls" secondAttribute="bottom" id="5E0-LD-nMR"/>
+                            <constraint firstItem="sK3-it-0ro" firstAttribute="trailing" secondItem="vwg-7s-sR6" secondAttribute="trailing" id="L8U-di-gNP"/>
+                            <constraint firstItem="FVt-5L-4ls" firstAttribute="trailing" secondItem="sK3-it-0ro" secondAttribute="trailing" id="Lh0-Th-Lyo"/>
+                            <constraint firstItem="sK3-it-0ro" firstAttribute="bottom" secondItem="vwg-7s-sR6" secondAttribute="bottom" id="a3m-hg-wTx"/>
+                            <constraint firstItem="vwg-7s-sR6" firstAttribute="leading" secondItem="sK3-it-0ro" secondAttribute="leading" id="aTP-Vu-Rqx"/>
+                            <constraint firstItem="vwg-7s-sR6" firstAttribute="top" secondItem="sK3-it-0ro" secondAttribute="top" id="cRY-yO-hWb"/>
+                            <constraint firstItem="FVt-5L-4ls" firstAttribute="leading" secondItem="sK3-it-0ro" secondAttribute="leading" id="gLz-Ox-7xc"/>
+                            <constraint firstItem="FVt-5L-4ls" firstAttribute="top" secondItem="H0Y-gJ-cv7" secondAttribute="top" id="rtL-Av-rVj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="znJ-Z5-YD7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2b-hF-bOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2598.5507246376815" y="-760.04464285714278"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="g8w-vS-VmE"/>
         <segue reference="tbM-Z3-zpQ"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -821,6 +931,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

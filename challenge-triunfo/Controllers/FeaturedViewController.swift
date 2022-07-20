@@ -33,7 +33,7 @@ class FeaturedViewController: UIViewController {
         upcomingCollectionView.delegate = self
         
         overrideUserInterfaceStyle = .dark
-        sleep(3)
+        sleep(2)
         
         Task {
             

@@ -26,6 +26,7 @@
 		C0DC7F8B28872A7B000F52A7 /* PosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC7F8A28872A7B000F52A7 /* PosterViewController.swift */; };
 		C0DC7F8D28874AD3000F52A7 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC7F8C28874AD3000F52A7 /* TrendingViewController.swift */; };
 		C0DC7F9128874FAB000F52A7 /* TrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC7F9028874FAB000F52A7 /* TrendingTableViewCell.swift */; };
+		C0DC7F932887808B000F52A7 /* SeeAllTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC7F922887808B000F52A7 /* SeeAllTableViewCell.swift */; };
 		C0E2B95528737E400022638C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95428737E400022638C /* AppDelegate.swift */; };
 		C0E2B95728737E400022638C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95628737E400022638C /* SceneDelegate.swift */; };
 		C0E2B95928737E400022638C /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2B95828737E400022638C /* FeaturedViewController.swift */; };
@@ -54,7 +55,8 @@
 		C0DC7F8A28872A7B000F52A7 /* PosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterViewController.swift; sourceTree = "<group>"; };
 		C0DC7F8C28874AD3000F52A7 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
 		C0DC7F9028874FAB000F52A7 /* TrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingTableViewCell.swift; sourceTree = "<group>"; };
-		C0E2B95128737E400022638C /* challenge-triunfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge-triunfo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DC7F922887808B000F52A7 /* SeeAllTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllTableViewCell.swift; sourceTree = "<group>"; };
+		C0E2B95128737E400022638C /* Ticket to Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ticket to Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E2B95428737E400022638C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E2B95628737E400022638C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C0E2B95828737E400022638C /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				C04655AB287C9857000FD91D /* UpcomingCollectionViewCell.swift */,
 				C04655A9287C9843000FD91D /* NowPlayingCollectionViewCell.swift */,
 				C0DC7F9028874FAB000F52A7 /* TrendingTableViewCell.swift */,
+				C0DC7F922887808B000F52A7 /* SeeAllTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,7 +141,7 @@
 		C0E2B95228737E400022638C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0E2B95128737E400022638C /* challenge-triunfo.app */,
+				C0E2B95128737E400022638C /* Ticket to Watch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C0E2B95028737E400022638C /* challenge-triunfo */ = {
+		C0E2B95028737E400022638C /* Ticket to Watch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0E2B96528737E410022638C /* Build configuration list for PBXNativeTarget "challenge-triunfo" */;
+			buildConfigurationList = C0E2B96528737E410022638C /* Build configuration list for PBXNativeTarget "Ticket to Watch" */;
 			buildPhases = (
 				C0E2B94D28737E400022638C /* Sources */,
 				C0E2B94E28737E400022638C /* Frameworks */,
@@ -171,9 +174,9 @@
 			);
 			dependencies = (
 			);
-			name = "challenge-triunfo";
+			name = "Ticket to Watch";
 			productName = "challenge-triunfo";
-			productReference = C0E2B95128737E400022638C /* challenge-triunfo.app */;
+			productReference = C0E2B95128737E400022638C /* Ticket to Watch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -191,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C0E2B94C28737E400022638C /* Build configuration list for PBXProject "challenge-triunfo" */;
+			buildConfigurationList = C0E2B94C28737E400022638C /* Build configuration list for PBXProject "Ticket to Watch" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -204,7 +207,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0E2B95028737E400022638C /* challenge-triunfo */,
+				C0E2B95028737E400022638C /* Ticket to Watch */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +252,7 @@
 				C0DC7F8D28874AD3000F52A7 /* TrendingViewController.swift in Sources */,
 				C0DC7F832881EC57000F52A7 /* Movie+API.swift in Sources */,
 				C0DC7F8728871F07000F52A7 /* MovieDetails.swift in Sources */,
+				C0DC7F932887808B000F52A7 /* SeeAllTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +402,7 @@
 				DEVELOPMENT_TEAM = Y587ZJ8Z8V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "challenge-triunfo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ticket to Watch";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -426,6 +431,7 @@
 				DEVELOPMENT_TEAM = Y587ZJ8Z8V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "challenge-triunfo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ticket to Watch";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -447,7 +453,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C0E2B94C28737E400022638C /* Build configuration list for PBXProject "challenge-triunfo" */ = {
+		C0E2B94C28737E400022638C /* Build configuration list for PBXProject "Ticket to Watch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0E2B96328737E410022638C /* Debug */,
@@ -456,7 +462,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0E2B96528737E410022638C /* Build configuration list for PBXNativeTarget "challenge-triunfo" */ = {
+		C0E2B96528737E410022638C /* Build configuration list for PBXNativeTarget "Ticket to Watch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0E2B96628737E410022638C /* Debug */,
