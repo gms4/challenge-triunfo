@@ -39,6 +39,9 @@ class TrendingViewController: UIViewController {
         self.trendingTableView.dataSource = self
         self.trendingTableView.delegate = self
         
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .normal)
+        
         Task {
             
             trendingTodayMovies = await Movie.trendingTodayMoviesAPI()
@@ -87,7 +90,6 @@ extension TrendingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let movie = trendingMovies[indexPath.item]
         self.performSegue(withIdentifier: "detailsSegue", sender: movie)
-        
         tableView.cellForRow(at: indexPath)?.isSelected = false
     }
     

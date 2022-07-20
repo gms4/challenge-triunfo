@@ -73,6 +73,7 @@ extension Movie {
         
     }
     
+    // MARK: - download de upcoming
     static func upcomingMoviesAPI() async -> [Movie] {
         
         var components = Movie.urlComponents
@@ -103,6 +104,7 @@ extension Movie {
         
     }
     
+    // MARK: - download de trendings de hoje
     static func trendingTodayMoviesAPI() async -> [Movie] {
         
         var components = Movie.urlComponents
@@ -133,6 +135,7 @@ extension Movie {
         
     }
     
+    // MARK: - downloado de trendings dessa semana
     static func trendingThisWeekMoviesAPI() async -> [Movie] {
         
         var components = Movie.urlComponents
@@ -163,7 +166,7 @@ extension Movie {
         
     }
     
-    
+    // MARK: - download de detalhes
     static func getDetailsAPI(id: Int) async -> MovieDetails {
         
         var components = Movie.urlComponents
@@ -193,6 +196,32 @@ extension Movie {
         return MovieDetails(runtime: 0, genres: [])
         
     }
+    
+    // MARK: - download de search
+    static func searchMoviesAPI(_ title: String) async -> [Movie] {
+            
+            var components = Movie.urlComponents
+            components.path = "/3/search/movie"
+            components.queryItems = [
+                URLQueryItem(name: "api_key", value: Movie.apiKey),
+                URLQueryItem(name: "query", value: title)
+            ]
+            
+            let session = URLSession.shared
+            
+            do {
+                let (data, _) = try await session.data(from: components.url!)
+                
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let movieResult = try decoder.decode(MoviesResponse.self, from: data)
+                
+                return movieResult.results
+            } catch {
+                print(error)
+            }
+            return []
+        }
     
     
     
